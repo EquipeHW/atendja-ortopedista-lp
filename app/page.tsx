@@ -89,10 +89,9 @@ export default function OrtopediaLP() {
                 className="rounded-3xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 content-center">
                   <Shield className="h-6 w-6 text-[#2EA55C]" />
                   <div>
-                    <p className="font-semibold text-sm">Atendimento Seguro</p>
                     <p className="text-xs text-gray-600">Equipamentos Certificados</p>
                   </div>
                 </div>
