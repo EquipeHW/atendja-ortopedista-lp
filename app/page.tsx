@@ -119,7 +119,7 @@ export default function OrtopediaLP() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <Activity className="h-12 w-12 text-[#2EA55C] mx-auto mb-4" />
+                <Activity className="h-12 w-12 text-[#008B47] mx-auto mb-4" />
                 <CardTitle className="text-lg">Ultrassom Articular</CardTitle>
               </CardHeader>
               <CardContent>
@@ -130,7 +130,7 @@ export default function OrtopediaLP() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <Zap className="h-12 w-12 text-[#8DBF44] mx-auto mb-4" />
+                <Zap className="h-12 w-12 text-[#008B47] mx-auto mb-4" />
                 <CardTitle className="text-lg">Infiltração Articular</CardTitle>
               </CardHeader>
               <CardContent>
@@ -343,28 +343,37 @@ export default function OrtopediaLP() {
           <div className="max-w-3xl mx-auto space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Preciso de pedido médico para raio-X?</CardTitle>
+                <CardTitle className="text-lg">Como funciona o atendimento?</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Sim, mas nossos ortopedistas podem solicitar na hora.</p>
+                <p className="text-gray-600">Presencial com agendamento via WhatsApp. Atendimento ágil e sem filas.</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Infiltração dói?</CardTitle>
+                <CardTitle className="text-lg">Trabalha com convênios?</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Usamos anestesia local para maior conforto.</p>
+                <p className="text-gray-600">Não. Atendemos exclusivamente como clínica particular, com recibo para reembolso.</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Quando considerar cirurgia?</CardTitle>
+                <CardTitle className="text-lg">Como agendo minha consulta?</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Avaliamos cada caso individualmente antes de indicar.</p>
+                <p className="text-gray-600">Entre em contato pelo WhatsApp (75) 3026‑8494 ou via redes sociais.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Qual o valor das consultas?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Consultas a partir de R$ 150 e procedimentos desde R$ 80.</p>
               </CardContent>
             </Card>
           </div>
