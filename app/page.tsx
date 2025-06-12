@@ -54,7 +54,7 @@ export default function OrtopediaLP() {
       </header>
 
       {/* Hero Section */}
-      <section className="text-white py-12 md:py-16 relative overflow-hidden"
+      <section className="text-white py-12 md:py-14 relative overflow-hidden"
         style={{
           background: `linear-gradient(135deg, #008B47 0%, #2EA55C 50%, #8DBF44 100%)`,
         }}>
@@ -62,7 +62,7 @@ export default function OrtopediaLP() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-[#fff] mb-6 leading-tight">
-                Livre-se da Dor e Volte a Se Mover com <span className="text-[#fff]">Segurança!</span>
+                Ortopedista em <span className="text-[#fff]">Feira de Santana</span>
               </h1>
               <p className="text-xl text-[#fff] mb-8 leading-relaxed">
                 Na Atend Já, você faz consultas com ortopedistas experientes, exames de imagem e tratamentos para
@@ -73,29 +73,24 @@ export default function OrtopediaLP() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg px-8 py-4 border-[#8DBF44] text-[#8DBF44] hover:bg-[#fff]/50 font-bold"
+                  className="text-lg px-8 py-4 border-[#8DBF44] text-[#008B47] hover:bg-[#fff]/50 font-bold"
+                  asChild
                 >
-                  <Calendar className="h-5 w-5 mr-2" />
-                  AGENDAR CONSULTA
+                  <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                    <Calendar className="h-5 w-5 mr-2" />
+                    AGENDAR CONSULTA
+                  </a>
                 </Button>
               </div>
             </div>
-            <div className="relative justify-end">
+            <div className="relative flex justify-end">
               <Image
-                src="/7.png?height=500&width=600"
+                src="/7.png?height=500&width=500"
                 alt="Médico ortopedista examinando joelho de paciente"
-                width={600}
+                width={500}
                 height={500}
                 className="rounded-3xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex items-center space-x-2 content-center">
-                  <Shield className="h-6 w-6 text-[#2EA55C]" />
-                  <div>
-                    <p className="text-xs text-gray-600">Equipamentos Certificados</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -161,34 +156,43 @@ export default function OrtopediaLP() {
       </section>
 
       {/* Sinais de Alerta */}
-      <section id="sintomas" className="py-12 bg-gray-50">
+      <section id="sintomas" className="py-12" style={{
+          background: `linear-gradient(135deg, #008B47 0%, #2EA55C 50%, #8DBF44 100%)`,
+        }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3B3F3D] mb-4">Você Tem Algum Desses Sintomas?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#fff] mb-4">Você Tem Algum Desses Sintomas?</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
-              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="h-8 w-8 text-[#008B47] flex-shrink-0" />
               <p className="text-lg">Dor constante em joelhos, ombros ou coluna</p>
             </div>
             <div className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
-              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="h-8 w-8 text-[#008B47] flex-shrink-0" />
               <p className="text-lg">Dificuldade para caminhar ou subir escadas</p>
             </div>
             <div className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
-              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="h-8 w-8 text-[#008B47] flex-shrink-0" />
               <p className="text-lg">Estalos articulares frequentes</p>
             </div>
             <div className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
-              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="h-8 w-8 text-[#008B47] flex-shrink-0" />
               <p className="text-lg">Inchaço ou vermelhidão nas articulações</p>
             </div>
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="bg-[#008B47] hover:bg-[#2EA55C] text-lg px-8 py-4 text-white font-bold">
-              AGENDAR CONSULTA
+            <Button 
+              size="lg" 
+              className="bg-white border-2 border-[#008B47] hover:bg-[#008B47] hover:text-white text-[#008B47] text-lg px-8 py-4 font-bold transition-colors"
+              asChild
+            >
+              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5 mr-2" />
+                AGENDAR CONSULTA
+              </a>
             </Button>
           </div>
         </div>
@@ -230,7 +234,7 @@ export default function OrtopediaLP() {
                 <CardTitle className="text-lg">Preços Acessíveis</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Consulta + ultrassom por menos de R$ 350</p>
+                <p className="text-gray-600">Consulta e ultrassom com preço acessível</p>
               </CardContent>
             </Card>
 
@@ -250,10 +254,12 @@ export default function OrtopediaLP() {
       </section>
 
       {/* Depoimentos */}
-      <section id="depoimentos" className="py-12 bg-gray-50">
+      <section id="depoimentos" className="py-12" style={{
+          background: `linear-gradient(135deg, #008B47 0%, #2EA55C 50%, #8DBF44 100%)`,
+        }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3B3F3D] mb-4">O que dizem nossos pacientes:</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#fff] mb-4">O que dizem nossos pacientes:</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -310,7 +316,7 @@ export default function OrtopediaLP() {
             </Card>
           </div>
 
-          <div className="bg-blue-50 p-6 rounded-lg text-center">
+          <div className="bg-green-200 p-6 rounded-lg text-center">
             <div className="flex items-center justify-center space-x-8">
               <div className="flex items-center space-x-2">
                 <Award className="h-6 w-6 text-[#008B47]" />
@@ -364,9 +370,15 @@ export default function OrtopediaLP() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-[#8DBF44] hover:bg-[#8DBF44]/90 text-lg px-8 py-4 text-white font-bold">
-              <MessageCircle className="h-5 w-5 mr-2" />
-              AGENDAR CONSULTA
+            <Button 
+              size="lg" 
+              className="bg-white border-2 border-[#008B47] hover:bg-[#008B47] hover:text-white text-[#008B47] text-lg px-8 py-4 font-bold transition-colors"
+              asChild
+            >
+              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5 mr-2" />
+                AGENDAR CONSULTA
+              </a>
             </Button>
           </div>
         </div>
@@ -387,7 +399,7 @@ export default function OrtopediaLP() {
                 />
               </div>
               <p className="text-white/70 mb-4">
-                Cuidado dermatológico especializado com preços acessíveis. Sua pele em boas mãos.
+                Cuidado Ortopédico especializado com preços acessíveis. Sua pele em boas mãos.
               </p>
               
             </div>
